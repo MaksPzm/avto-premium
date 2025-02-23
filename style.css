@@ -175,6 +175,7 @@ body {
 .wrap {
     margin-top: 79px;
     display: flex;
+    justify-content: space-between;
 }
 
 .wrap__content {
@@ -226,4 +227,12 @@ body {
     font: 0.875em / 1.5rem "PT Sans", sans-serif;
     color: rgba(102, 102, 102, 1);
     margin: 14px 90px 30px 30px;
+}
+
+.wrap__content_addit-info {
+    width: 270px;
+    height: 2761px;
+    display: grid;
+    grid-template-rows: 429px 1020px 516px 277px 279px;
+    gap: 60px;
 }
