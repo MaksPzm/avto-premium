@@ -32,3 +32,21 @@ function getPopularPostBoxOne(i) {
 getPopularPostBoxOne(0)
 getPopularPostBoxOne(1)
 getPopularPostBoxOne(2)
+    
+const instImg = ['images/png/inst/RectangleCopy42.png', 
+    'images/png/inst/RectangleCopy2.png', 'images/png/inst/RectangleCopy43.png',
+    'images/png/inst/RectangleCopy24.png', 'images/png/inst/RectangleCopy44.png',
+    'images/png/inst/RectangleCopy30.png'
+ ];
+const boxInstImg = document.querySelector('.wrap__content_addit-info_inst_box');
+
+function getInstagramBoxImg() {
+    for (let i = 0; i < instImg.length; i++) {
+        let img = new Image;
+        img.src = instImg[i];
+        img.alt = 'auto';
+        boxInstImg.append(img);
+    }
+}   
+
+getInstagramBoxImg()
